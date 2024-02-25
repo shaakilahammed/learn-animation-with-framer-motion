@@ -16,7 +16,7 @@ const Counter = () => {
                 x: '-100vw',
                 transition: {
                     ease: 'easeInOut',
-                    duration: 1,
+                    duration: 0.5,
                 },
             }}
         >

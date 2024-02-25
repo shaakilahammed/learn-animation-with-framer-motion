@@ -3,7 +3,18 @@ import { useState } from 'react';
 const Stagger = () => {
     const [isShown, setIsShown] = useState(false);
     return (
-        <nav className="menu">
+        <motion.nav
+            className="menu"
+            exit={{
+                x: '-100vw',
+                transition: {
+                    ease: 'easeInOut',
+                    duration: 0.5,
+                },
+            }}
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0, transition: { duration: 0.5 } }}
+        >
             <div className="flex flex-col px-32 bg-white">
                 <motion.button
                     onClick={() => setIsShown(!isShown)}
@@ -84,7 +95,7 @@ const Stagger = () => {
                     </motion.div>
                 )}
             </div>
-        </nav>
+        </motion.nav>
     );
 };
 

@@ -1,5 +1,4 @@
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
 // import BasicAnimation from './pages/BasicAnimation';
 // import ButtonAnimation from './pages/ButtonAnimation';
 // import ScrollRevealAnimation from './pages/ScrollRevealAnimation';
@@ -28,8 +27,6 @@ import AnimatedRoutes from './pages/AnimatedRoutes';
 function App() {
     return (
         <BrowserRouter>
-            <Navbar />
-
             <AnimatedRoutes />
         </BrowserRouter>
 
