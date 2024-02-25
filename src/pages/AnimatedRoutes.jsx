@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import BasicAnimation from './BasicAnimation';
 import ButtonAnimation from './ButtonAnimation';
 import ScrollRevealAnimation from './ScrollRevealAnimation';
+import StaggerAnimation from './StaggerAnimation';
 import TextAnimation from './TextAnimation';
 import TransitionTypeAnimation from './TransitionTypeAnimation';
 import VariantsAnimation from './VariantsAnimation';
@@ -24,6 +25,7 @@ const AnimatedRoutes = () => {
                     path="/scroll-reveal"
                     element={<ScrollRevealAnimation />}
                 />
+                <Route path="/stagger" element={<StaggerAnimation />} />
             </Routes>
         </AnimatePresence>
     );
